@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CoEditors
+from .models import People
 # Register your models here.
 
-admin.site.register(CoEditors)
+admin.site.register(People)

@@ -3,12 +3,12 @@ from django.db import models
 
 # Create your models here.
 
-class CoEditors(models.Model):
+class People(models.Model):
     name = models.CharField(max_length=100)
     age = models.PositiveIntegerField()
     job_title = models.CharField(max_length=100)
     about_person = models.TextField()
-    photo = models.ImageField(upload_to='images/people')
+    photo = models.ImageField(upload_to='people')
 
     class Meta:
         ordering = ['-id']
