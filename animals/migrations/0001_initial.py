@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Animals',
+            name='animals',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('type', models.CharField(choices=[('dog', 'dog'), ('cat', 'cat')], max_length=100, verbose_name='Вид')),
@@ -35,7 +35,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('image', models.ImageField(blank=True, upload_to='PetPics', verbose_name='Изображение')),
-                ('pet', models.ForeignKey(default=None, on_delete=django.db.models.deletion.CASCADE, to='Animals.animals')),
+                ('pet', models.ForeignKey(default=None, on_delete=django.db.models.deletion.CASCADE, to='animals.animals')),
             ],
             options={
                 'verbose_name': 'Фото',

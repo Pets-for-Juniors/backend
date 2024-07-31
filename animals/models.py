@@ -30,7 +30,7 @@ class Animals(models.Model):
 
 class ImagePets(models.Model):
     pet = models.ForeignKey(Animals, default=None, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='PetPics', verbose_name='Изображение', blank=True)
+    image = models.ImageField(upload_to='petpics', verbose_name='Изображение', blank=True)
 
     class Meta:
         db_table = 'Изображения животных'

@@ -1,6 +1,6 @@
 [
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 1,
     "fields": {
       "type": "dog",
@@ -13,7 +13,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 2,
     "fields": {
       "type": "dog",
@@ -26,7 +26,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 3,
     "fields": {
       "type": "dog",
@@ -39,7 +39,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 4,
     "fields": {
       "type": "dog",
@@ -52,7 +52,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 5,
     "fields": {
       "type": "cat",
@@ -65,7 +65,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 6,
     "fields": {
       "type": "cat",
@@ -78,7 +78,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 7,
     "fields": {
       "type": "cat",
@@ -91,7 +91,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 8,
     "fields": {
       "type": "cat",
@@ -104,7 +104,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 9,
     "fields": {
       "type": "cat",
@@ -117,7 +117,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 10,
     "fields": {
       "type": "cat",
@@ -130,7 +130,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 11,
     "fields": {
       "type": "dog",
@@ -143,7 +143,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 12,
     "fields": {
       "type": "dog",
@@ -156,7 +156,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 13,
     "fields": {
       "type": "dog",
@@ -169,7 +169,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 14,
     "fields": {
       "type": "dog",
@@ -182,7 +182,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 15,
     "fields": {
       "type": "dog",
@@ -195,7 +195,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 16,
     "fields": {
       "type": "cat",
@@ -208,7 +208,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 17,
     "fields": {
       "type": "cat",
@@ -221,7 +221,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 18,
     "fields": {
       "type": "cat",
@@ -234,7 +234,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 19,
     "fields": {
       "type": "dog",
@@ -247,7 +247,7 @@
     }
   },
   {
-    "model": "Animals.animals",
+    "model": "animals.animals",
     "pk": 20,
     "fields": {
       "type": "dog",
