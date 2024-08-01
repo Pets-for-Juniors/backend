@@ -1,0 +1,57 @@
+[
+  {
+    "model": "people.People",
+    "pk": 1,
+    "fields": {
+      "name": "Черняева Кристина",
+      "age": 24,
+      "job_title": "Backend Developer",
+      "about_person": "lalala",
+      "photo": "people/kris.jpg"
+    }
+  },
+  {
+    "model": "people.People",
+    "pk": 2,
+    "fields": {
+      "name": "Политыко Софья",
+      "age": 25,
+      "job_title": "Backend Developer",
+      "about_person": "lalala",
+      "photo": "people/sofa.jpg"
+    }
+  },
+  {
+    "model": "people.People",
+    "pk": 3,
+    "fields": {
+      "name": "Высоцкая Лия",
+      "age": 26,
+      "job_title": "Frontend Developer",
+      "about_person": "lalala",
+      "photo": "people/lia.jpg"
+    }
+  },
+  {
+    "model": "people.People",
+    "pk": 4,
+    "fields": {
+      "name": "Высоцкий Игорь",
+      "age": 31,
+      "job_title": "Project Manager",
+      "about_person": "lalala",
+      "photo": "people/igor.jpg"
+    }
+  },
+  {
+    "model": "people.People",
+    "pk": 5,
+    "fields": {
+      "name": "Череменцева Вероника",
+      "age": 23,
+      "job_title": "Designer",
+      "about_person": "lalala",
+      "photo": "people/nika.jpg"
+    }
+  }
+]
