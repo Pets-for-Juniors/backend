@@ -1,0 +1,322 @@
+[
+  {
+    "model": "animals.imagepets",
+    "pk": 1,
+    "fields": {
+      "pet": 1,
+      "image": "petpics/ovcharka-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 2,
+    "fields": {
+      "pet": 1,
+      "image": "petpics/ovcharka-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 3,
+    "fields": {
+      "pet": 2,
+      "image": "petpics/kolli-sotlandskaa-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 4,
+    "fields": {
+      "pet": 2,
+      "image": "petpics/kolli-sotlandskaa-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 5,
+    "fields": {
+      "pet": 3,
+      "image": "petpics/anglijskij-setter-1.jpeg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 6,
+    "fields": {
+      "pet": 3,
+      "image": "petpics/angliiskii-setter-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 7,
+    "fields": {
+      "pet": 4,
+      "image": "petpics/doberman-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 8,
+    "fields": {
+      "pet": 4,
+      "image": "petpics/doberman-2.jpeg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 9,
+    "fields": {
+      "pet": 5,
+      "image": "petpics/siamskaya-koshka-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 10,
+    "fields": {
+      "pet": 5,
+      "image": "petpics/siamskaya-koshka-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 11,
+    "fields": {
+      "pet": 6,
+      "image": "petpics/oriental-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 12,
+    "fields": {
+      "pet": 6,
+      "image": "petpics/oriental-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 13,
+    "fields": {
+      "pet": 7,
+      "image": "petpics/sfinks-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 14,
+    "fields": {
+      "pet": 7,
+      "image": "petpics/sfinks-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 15,
+    "fields": {
+      "pet": 8,
+      "image": "petpics/abissinskaya-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 16,
+    "fields": {
+      "pet": 8,
+      "image": "petpics/abissinskaya-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 17,
+    "fields": {
+      "pet": 9,
+      "image": "petpics/bengalskoi-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 18,
+    "fields": {
+      "pet": 9,
+      "image": "petpics/bengalskaja-2.jpeg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 19,
+    "fields": {
+      "pet": 10,
+      "image": "petpics/mein-kun-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 20,
+    "fields": {
+      "pet": 10,
+      "image": "petpics/mein-kun-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 21,
+    "fields": {
+      "pet": 11,
+      "image": "petpics/bigl-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 22,
+    "fields": {
+      "pet": 11,
+      "image": "petpics/bigl-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 23,
+    "fields": {
+      "pet": 12,
+      "image": "petpics/Haski-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 24,
+    "fields": {
+      "pet": 12,
+      "image": "petpics/Haski-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 25,
+    "fields": {
+      "pet": 13,
+      "image": "petpics/belgiiska-ovcharka-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 26,
+    "fields": {
+      "pet": 13,
+      "image": "petpics/belgiiska-ovcharka-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 27,
+    "fields": {
+      "pet": 14,
+      "image": "petpics/akita-inu-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 28,
+    "fields": {
+      "pet": 14,
+      "image": "petpics/akita-inu-2.jpeg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 29,
+    "fields": {
+      "pet": 15,
+      "image": "petpics/taksa-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 30,
+    "fields": {
+      "pet": 15,
+      "image": "petpics/taksa-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 31,
+    "fields": {
+      "pet": 16,
+      "image": "petpics/burma-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 32,
+    "fields": {
+      "pet": 16,
+      "image": "petpics/burma-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 33,
+    "fields": {
+      "pet": 17,
+      "image": "petpics/bombei-1.jpeg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 34,
+    "fields": {
+      "pet": 17,
+      "image": "petpics/bombei-2.jpeg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 35,
+    "fields": {
+      "pet": 18,
+      "image": "petpics/may-1.jpeg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 36,
+    "fields": {
+      "pet": 18,
+      "image": "petpics/may-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 37,
+    "fields": {
+      "pet": 19,
+      "image": "petpics/korgi-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 38,
+    "fields": {
+      "pet": 19,
+      "image": "petpics/korgi-2.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 39,
+    "fields": {
+      "pet": 20,
+      "image": "petpics/pitbul-1.jpg"
+    }
+  },
+  {
+    "model": "animals.imagepets",
+    "pk": 40,
+    "fields": {
+      "pet": 20,
+      "image": "petpics/pitbul-2.jpg"
+    }
+  }
+]
