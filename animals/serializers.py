@@ -2,13 +2,13 @@ from rest_framework import serializers
 from .models import Animals, ImagePets
 
 
-class ImageSerialiser(serializers.ModelSerializer):
+class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ImagePets
         fields = ['image']
 
 
-class AnimalSerialiser(serializers.ModelSerializer):
+class AnimalSerializer(serializers.ModelSerializer):
     images = serializers.SerializerMethodField()
 
     class Meta:
@@ -17,4 +17,4 @@ class AnimalSerialiser(serializers.ModelSerializer):
 
     def get_images(self, obj):
         queryset = ImagePets.objects.filter(pet=obj)
-        return [ImageSerialiser(q).data['image'] for q in queryset]
+        return [ImageSerializer(q).data['image'] for q in queryset]

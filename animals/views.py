@@ -3,7 +3,7 @@ from rest_framework import mixins
 from rest_framework.viewsets import GenericViewSet
 
 from .models import Animals
-from .serializers import AnimalSerialiser
+from .serializers import AnimalSerializer
 
 
 
@@ -12,7 +12,7 @@ from .serializers import AnimalSerialiser
 class AnimalAPIView(mixins.RetrieveModelMixin,
                    GenericViewSet):
     queryset = Animals.objects.all()
-    serializer_class = AnimalSerialiser
+    serializer_class = AnimalSerializer
 
 
 
