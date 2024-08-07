@@ -29,7 +29,7 @@ class Animals(models.Model):
 
 
 class ImagePets(models.Model):
-    pet = models.ForeignKey(Animals, default=None, on_delete=models.CASCADE)
+    pet = models.ForeignKey(Animals, default=None,related_name='pet', on_delete=models.CASCADE)
     image = models.ImageField(upload_to='petpics', verbose_name='Изображение', blank=True)
 
     class Meta:
