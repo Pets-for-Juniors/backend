@@ -19,14 +19,16 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
-from animals.views import AnimalAPIView
+from animals.views import AnimalAPIView, AnimalListAPIView
 
 
 router = routers.DefaultRouter()
-router.register(r'pets', AnimalAPIView)
+router.register(r'pets', AnimalAPIView, basename='animal_card')
+# router.register(r'pets', AnimalListAPIView, basename='animal_list')
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),
+    path("api/pets/", AnimalListAPIView.as_view())
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
