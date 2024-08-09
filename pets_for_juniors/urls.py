@@ -24,7 +24,6 @@ from animals.views import AnimalAPIView, AnimalListAPIView
 
 router = routers.DefaultRouter()
 router.register(r'pets', AnimalAPIView, basename='animal_card')
-# router.register(r'pets', AnimalListAPIView, basename='animal_list')
 
 urlpatterns = [
     path("admin/", admin.site.urls),
