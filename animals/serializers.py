@@ -18,3 +18,15 @@ class AnimalSerializer(serializers.ModelSerializer):
     def get_images(self, obj):
         queryset = ImagePets.objects.filter(pet=obj)
         return [ImageSerializer(q).data['image'] for q in queryset]
+
+
+class AnimalListSerializer(serializers.ModelSerializer):
+    images = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Animals
+        fields = ['id', 'type', 'sex', 'age', 'breed', 'images']
+
+    def get_images(self, obj):
+        queryset = ImagePets.objects.filter(pet=obj).first()
+        return ImageSerializer(queryset).data['image']
