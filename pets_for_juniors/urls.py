@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
 from animals.views import AnimalAPIView, AnimalListAPIView
+from people.views import PeopleAPIView
 
 
 router = routers.DefaultRouter()
@@ -28,6 +29,7 @@ router.register(r'pets', AnimalAPIView, basename='animal_card')
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),
+    path('api/employees/', PeopleAPIView.as_view()),
     path("api/pets/", AnimalListAPIView.as_view())
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
