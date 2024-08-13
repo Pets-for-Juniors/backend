@@ -9,8 +9,7 @@ from .serializers import PeopleSerializer
 
 
 class PeoplePagination(LimitOffsetPagination):
-    default_limit = 1
-    max_limit = 1
+
     def get_paginated_response(self, data):
         queryset = People.objects.all()
         return Response({
