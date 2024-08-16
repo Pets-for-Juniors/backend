@@ -1,8 +1,7 @@
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import mixins, generics, pagination, filters
+from rest_framework import mixins, generics, filters
 from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
-from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet
 from .constans import age_data
 from .models import Animals
@@ -17,15 +16,6 @@ class AnimalAPIView(mixins.RetrieveModelMixin,
                     GenericViewSet):
     queryset = Animals.objects.all()
     serializer_class = AnimalSerializer
-
-
-class CustomPagination(pagination.LimitOffsetPagination):
-    def get_paginated_response(self, data):
-        queryset = Animals.objects.all()
-        return Response({
-            'count': queryset.count(),
-            'data': data
-        })
 
 
 class AnimalListAPIView(generics.ListAPIView, mixins.ListModelMixin):

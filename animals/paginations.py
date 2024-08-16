@@ -1,4 +1,3 @@
-from rest_framework import pagination
 from .models import Animals
 from .constans import age_data
 from pets_for_juniors.utils import ForPagination
