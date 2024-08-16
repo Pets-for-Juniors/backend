@@ -33,7 +33,7 @@ urlpatterns = [
     path('api/employees/', PeopleAPIView.as_view()),
     path("api/pets/", AnimalListAPIView.as_view()),
     path("api/pets/filter/type/", TypeFilterAPIView.as_view()),
-    path("api/pets/filter/sex/", SexFilterAPIView.as_view()),
+    path("api/pets/filter/gender/", SexFilterAPIView.as_view()),
     path("api/pets/filter/breed/", BreedFilterAPIView.as_view()),
     path("api/pets/filter/age/", AgeFilterAPIView.as_view()),
 

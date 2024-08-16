@@ -1,57 +1,40 @@
-import sys
-
 from rest_framework import pagination
 from rest_framework.response import Response
 
 from .models import Animals
+from .constans import age_data
 
 
-class GenderPagination(pagination.LimitOffsetPagination):
+class ForPagination(pagination.LimitOffsetPagination):
+    queryset = None
+
+    def get_counter(self):
+        if self.queryset is not None:
+            return len(self.queryset)
+
     def get_paginated_response(self, data):
-        queryset = Animals.objects.values('sex').distinct()
+        counter = self.get_counter()
         return Response({
-            'count': queryset.count(),
+            'count': counter,
             'data': data
         })
 
 
-class CustomPagination(pagination.LimitOffsetPagination):
-    def get_paginated_response(self, data):
-        queryset = Animals.objects.all()
-        return Response({
-            'count': queryset.count(),
-            'data': data
-        })
+class BreedPagination(ForPagination):
+    queryset = Animals.objects.values('breed', 'type').distinct()
 
 
-class TypePagination(pagination.LimitOffsetPagination):
-    def get_paginated_response(self, data):
-        queryset = Animals.objects.values('type').distinct()
-        return Response({
-            'count': queryset.count(),
-            'data': data
-        })
+class GenderPagination(ForPagination):
+    queryset = Animals.objects.values('sex').distinct()
 
 
-class BreedPagination(pagination.LimitOffsetPagination):
-    def get_paginated_response(self, data):
-        queryset = Animals.objects.values('breed', 'type').distinct()
-        return Response({
-            'count': queryset.count(),
-            'data': data
-        })
+class TypePagination(ForPagination):
+    queryset = Animals.objects.values('type').distinct()
 
 
-class AgePagination(pagination.LimitOffsetPagination):
+class CustomPagination(ForPagination):
+    queryset = Animals.objects.all()
 
-    def get_paginated_response(self, data):
-        age_data = [
-            {'title': "Молодые", 'minAge': 0, 'maxAge': 2},
-            {'title': "В самом расцвете сил", 'minAge': 3, 'maxAge': 6},
-            {'title': "Пожилые", 'minAge': 7, 'maxAge': sys.maxsize}
-        ]
 
-        return Response({
-            'count': len(age_data),
-            'data': data
-        })
+class AgePagination(ForPagination):
+    queryset = age_data
