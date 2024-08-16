@@ -30,3 +30,28 @@ class AnimalListSerializer(serializers.ModelSerializer):
     def get_images(self, obj):
         queryset = ImagePets.objects.filter(pet=obj).first()
         return ImageSerializer(queryset).data['image']
+
+
+class BreedSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Animals
+        fields = ['breed', 'type']
+
+
+class TypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Animals
+        fields = ['type']
+
+
+class GenderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Animals
+        fields = ['sex']
+
+
+class AgeSerializer(serializers.Serializer):
+    title = serializers.CharField()
+    minAge = serializers.IntegerField()
+    maxAge = serializers.IntegerField()
+
