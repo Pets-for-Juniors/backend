@@ -2,7 +2,7 @@ from rest_framework import pagination
 from rest_framework.response import Response
 
 
-class ForPagination(pagination.LimitOffsetPagination):
+class BasePaginationView(pagination.LimitOffsetPagination):
     queryset = None
 
     def get_counter(self):

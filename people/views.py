@@ -2,10 +2,10 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import mixins, generics
 from .models import People
 from .serializers import PeopleSerializer
-from pets_for_juniors.utils import ForPagination
+from pets_for_juniors.utils import BasePaginationView
 
 
-class PeoplePagination(ForPagination):
+class PeoplePagination(BasePaginationView):
     queryset = People.objects.all()
 
 
@@ -15,3 +15,4 @@ class PeopleAPIView(generics.ListAPIView, mixins.ListModelMixin):
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['name', 'age', 'job_title', 'about_person', 'id']
     pagination_class = PeoplePagination
+
