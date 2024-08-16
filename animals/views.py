@@ -1,15 +1,14 @@
-import sys
-
-
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import mixins, generics, filters
+from rest_framework import mixins, generics, pagination, filters
+from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
+from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet
-from .models import Animals
-from .paginations import GenderPagination, CustomPagination, TypePagination, BreedPagination, AgePagination
-from .serializers import AnimalSerializer, AnimalListSerializer, BreedSerializer, TypeSerializer, GenderSerializer, \
-    AgeSerializer
 from .constans import age_data
+from .models import Animals
+from .paginations import AgePagination, BreedPagination, GenderPagination, TypePagination, CustomPagination
+from .serializers import (AnimalSerializer, AnimalListSerializer, TypeFilterSerializer, SexFilterSerializer,
+                          BreedFilterSerializer, AgeFilterSerializer)
 
 
 # Create your views here.
@@ -20,6 +19,15 @@ class AnimalAPIView(mixins.RetrieveModelMixin,
     serializer_class = AnimalSerializer
 
 
+class CustomPagination(pagination.LimitOffsetPagination):
+    def get_paginated_response(self, data):
+        queryset = Animals.objects.all()
+        return Response({
+            'count': queryset.count(),
+            'data': data
+        })
+
+
 class AnimalListAPIView(generics.ListAPIView, mixins.ListModelMixin):
     queryset = Animals.objects.all()
     serializer_class = AnimalListSerializer
@@ -28,21 +36,33 @@ class AnimalListAPIView(generics.ListAPIView, mixins.ListModelMixin):
     filterset_fields = '__all__'
 
 
-class GenderAPIView(generics.ListAPIView):
+class TypeFilterAPIView(ListAPIView):
+    queryset = Animals.objects.values('type').distinct()
+    serializer_class = TypeFilterSerializer
+    pagination_class = TypePagination
+    filterset_fields = ['type']
+
+
+class SexFilterAPIView(generics.ListAPIView, mixins.ListModelMixin):
     queryset = Animals.objects.values('sex').distinct()
-    filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['sex']
-    serializer_class = GenderSerializer
+    serializer_class = SexFilterSerializer
     pagination_class = GenderPagination
+    filterset_fields = ['sex']
 
 
-class AgeAPIView(generics.ListAPIView):
-    serializer_class = AgeSerializer
+class BreedFilterAPIView(generics.ListAPIView, mixins.ListModelMixin):
+    queryset = Animals.objects.values('type', 'breed').distinct()
+    serializer_class = BreedFilterSerializer
+    pagination_class = BreedPagination
+    filterset_fields = ['breed', 'type']
+
+
+class AgeFilterAPIView(generics.ListAPIView):
+    serializer_class = AgeFilterSerializer
     pagination_class = AgePagination
 
     def get_queryset(self):
         global age_data
-
         title = self.request.query_params.get('title')
         min_age = self.request.query_params.get('minAge')
         max_age = self.request.query_params.get('maxAge')
@@ -65,20 +85,3 @@ class AgeAPIView(generics.ListAPIView):
 
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
-
-
-
-class TypeAPIView(generics.ListAPIView):
-    queryset = Animals.objects.values('type').distinct()
-    filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['type']
-    serializer_class = TypeSerializer
-    pagination_class = TypePagination
-
-
-class BreedAPIView(generics.ListAPIView):
-    queryset = Animals.objects.values('breed', 'type').distinct()
-    filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['breed', 'type']
-    serializer_class = BreedSerializer
-    pagination_class = BreedPagination

@@ -22,4 +22,3 @@ class CustomPagination(ForPagination):
 
 class AgePagination(ForPagination):
     queryset = age_data
-
