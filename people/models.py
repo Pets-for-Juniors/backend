@@ -11,7 +11,6 @@ class People(models.Model):
     photo = models.ImageField(upload_to='people')
 
     class Meta:
-        ordering = ['-id']
         verbose_name = 'Сотрудник'
         verbose_name_plural = 'Сотрудники'
 
