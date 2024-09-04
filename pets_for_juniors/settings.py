@@ -54,7 +54,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "http://localhost:5174", "https://pets-for-juniors.github.io/First-Svelte-project", ]
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173",
+                        "http://localhost:5174",
+                        "https://pets-for-juniors.github.io/First-Svelte-project",
+                        ]
 
 CORS_ALLOW_HEADERS = (
     *default_headers,
@@ -63,6 +66,11 @@ CORS_ALLOW_HEADERS = (
 CORS_ALLOW_METHODS = (
     *default_methods,
 )
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:5173",
+                        "http://localhost:5174",
+                        "https://pets-for-juniors.github.io/First-Svelte-project",
+                        ]
 
 ROOT_URLCONF = "pets_for_juniors.urls"
 
