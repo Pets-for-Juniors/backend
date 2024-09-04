@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+from corsheaders.defaults import default_headers, default_methods
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-ol$f*_w8&+#v9zx+8ed0li@q1$9fbxm5o&p01n4$p#cfwph-&i"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -54,7 +54,15 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:5174", "http://10.0.0.186:5174"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "http://localhost:5174", "https://pets-for-juniors.github.io/First-Svelte-project", ]
+
+CORS_ALLOW_HEADERS = (
+    *default_headers,
+)
+
+CORS_ALLOW_METHODS = (
+    *default_methods,
+)
 
 ROOT_URLCONF = "pets_for_juniors.urls"
 
