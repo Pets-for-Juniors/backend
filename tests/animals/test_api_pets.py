@@ -1,4 +1,5 @@
 import requests
+from tests.test_constants import successful_status_code
 
 ENDPOINT = 'http://127.0.0.1:8000/api/pets'
 COUNT = 20
