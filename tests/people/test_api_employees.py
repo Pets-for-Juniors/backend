@@ -16,7 +16,7 @@ def test_get_list_employees():
 
     assert len(data['data']) == COUNT
 
-    for i in range(5):
+    for i in range(COUNT):
         assert data['data'][i]['id'] == i + 1
 
 
