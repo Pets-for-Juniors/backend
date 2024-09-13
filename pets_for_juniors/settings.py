@@ -11,20 +11,40 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 from corsheaders.defaults import default_headers, default_methods
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+import logging
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-ol$f*_w8&+#v9zx+8ed0li@q1$9fbxm5o&p01n4$p#cfwph-&i"
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
+
+
+# Azure Storage configuration
+DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+AZURE_ACCOUNT_NAME = os.getenv('AZURE_ACCOUNT_NAME')
+AZURE_ACCOUNT_KEY = os.getenv('AZURE_ACCOUNT_KEY')
+logger.debug(f"AZURE_STORAGEACCOUNT_KEY: {AZURE_ACCOUNT_KEY}")
+AZURE_CONTAINER = os.getenv('AZURE_CONTAINER')
+AZURE_URL_EXPIRATION_SECS = None
+AZURE_STORAGE_ACCOUNT_NAME = AZURE_ACCOUNT_NAME
+AZURE_STORAGE_ACCOUNT_KEY = AZURE_ACCOUNT_KEY
+AZURE_STORAGE_CONTAINER = AZURE_CONTAINER
+
 
 # Application definition
 
@@ -40,7 +60,8 @@ INSTALLED_APPS = [
     'animals.apps.AnimalsConfig',
     'rest_framework',
     'corsheaders',
-    'django_filters'
+    'django_filters',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -136,7 +157,10 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-MEDIA_URL = '/media/'
+
+AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+
+MEDIA_URL = f'http://{AZURE_CUSTOM_DOMAIN}/{AZURE_CONTAINER}/'
 
 MEDIA_ROOT = BASE_DIR / 'media/'
 
