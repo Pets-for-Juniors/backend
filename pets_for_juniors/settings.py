@@ -33,7 +33,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-
 # Azure Storage configuration
 DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 AZURE_ACCOUNT_NAME = os.getenv('AZURE_ACCOUNT_NAME')
@@ -41,7 +40,6 @@ AZURE_ACCOUNT_KEY = os.getenv('AZURE_ACCOUNT_KEY')
 logger.debug(f"AZURE_STORAGEACCOUNT_KEY: {AZURE_ACCOUNT_KEY}")
 AZURE_CONTAINER = os.getenv('AZURE_CONTAINER')
 AZURE_URL_EXPIRATION_SECS = None
-
 
 # Application definition
 
@@ -71,10 +69,12 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'corsheaders.middleware.CorsMiddleware',
 ]
+DOMEN_NAME = os.getenv('DOMEN_NAME')
+DOMEN_NAME_FRONT = os.getenv('DOMEN_NAME_FRONT')
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173",
                         "http://localhost:5174",
-                        "https://pets-for-juniors.github.io/First-Svelte-project",
+                        DOMEN_NAME_FRONT,
                         ]
 
 CORS_ALLOW_HEADERS = (
@@ -87,7 +87,8 @@ CORS_ALLOW_METHODS = (
 
 CSRF_TRUSTED_ORIGINS = ["http://localhost:5173",
                         "http://localhost:5174",
-                        "https://pets-for-juniors.github.io/First-Svelte-project",
+                        DOMEN_NAME,
+                        DOMEN_NAME_FRONT,
                         ]
 
 ROOT_URLCONF = "pets_for_juniors.urls"
@@ -153,7 +154,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "/static/"
-
 
 AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
 
