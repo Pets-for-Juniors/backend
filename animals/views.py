@@ -4,6 +4,7 @@ from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 from .constans import age_data
+from .filters import AnimalFilter
 from .models import Animals
 from .paginations import AgePagination, BreedPagination, GenderPagination, TypePagination, CustomPagination
 from .serializers import (AnimalSerializer, AnimalListSerializer, TypeFilterSerializer, SexFilterSerializer,
@@ -11,7 +12,6 @@ from .serializers import (AnimalSerializer, AnimalListSerializer, TypeFilterSeri
 
 
 # Create your views here.
-
 class AnimalAPIView(mixins.RetrieveModelMixin,
                     GenericViewSet):
     queryset = Animals.objects.all()
@@ -21,9 +21,9 @@ class AnimalAPIView(mixins.RetrieveModelMixin,
 class AnimalListAPIView(generics.ListAPIView, mixins.ListModelMixin):
     queryset = Animals.objects.all()
     serializer_class = AnimalListSerializer
+    filterset_class = AnimalFilter
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
     pagination_class = CustomPagination
-    filterset_fields = '__all__'
 
 
 class TypeFilterAPIView(ListAPIView):
