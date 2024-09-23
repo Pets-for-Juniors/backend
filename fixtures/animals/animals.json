@@ -3,260 +3,260 @@
     "model": "animals.animals",
     "pk": 1,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Джерри",
-      "sex": "male",
-      "breed": "Немецкая овчарка",
+      "gender": 1,
+      "breed": 3,
       "age": 5,
-      "time_create": "2024-07-27T10:16:28.039Z",
-      "time_update": "2024-07-27T10:16:28.039Z"
+      "time_create": "2024-09-23T08:46:29.006Z",
+      "time_update": "2024-09-23T08:46:29.006Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 2,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Лесси",
-      "sex": "female",
-      "breed": "Шотландская колли",
+      "gender": 2,
+      "breed": 4,
       "age": 7,
-      "time_create": "2024-07-27T10:20:56.118Z",
-      "time_update": "2024-07-27T10:20:56.119Z"
+      "time_create": "2024-09-23T08:46:46.749Z",
+      "time_update": "2024-09-23T08:46:46.749Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 3,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Бим",
-      "sex": "male",
-      "breed": "Английский сеттер",
+      "gender": 1,
+      "breed": 5,
       "age": 6,
-      "time_create": "2024-07-27T10:23:39.105Z",
-      "time_update": "2024-07-27T10:23:39.105Z"
+      "time_create": "2024-09-23T08:46:59.947Z",
+      "time_update": "2024-09-23T08:46:59.947Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 4,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Цезарь",
-      "sex": "male",
-      "breed": "Доберман",
+      "gender": 1,
+      "breed": 6,
       "age": 4,
-      "time_create": "2024-07-27T10:30:56.981Z",
-      "time_update": "2024-07-27T10:30:56.981Z"
+      "time_create": "2024-09-23T08:47:13.006Z",
+      "time_update": "2024-09-23T08:47:13.006Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 5,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Лёлик",
-      "sex": "male",
-      "breed": "Сиамская",
+      "gender": 1,
+      "breed": 1,
       "age": 3,
-      "time_create": "2024-07-27T10:35:15.802Z",
-      "time_update": "2024-07-27T10:35:15.802Z"
+      "time_create": "2024-09-23T08:47:26.077Z",
+      "time_update": "2024-09-23T08:47:26.077Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 6,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Гена",
-      "sex": "male",
-      "breed": "Ориентал",
+      "gender": 1,
+      "breed": 7,
       "age": 4,
-      "time_create": "2024-07-27T10:38:33.253Z",
-      "time_update": "2024-07-27T10:38:33.253Z"
+      "time_create": "2024-09-23T08:47:39.758Z",
+      "time_update": "2024-09-23T08:47:39.758Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 7,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Люций",
-      "sex": "male",
-      "breed": "Сфинкс",
+      "gender": 1,
+      "breed": 8,
       "age": 1,
-      "time_create": "2024-07-27T10:43:35.513Z",
-      "time_update": "2024-07-27T10:43:35.514Z"
+      "time_create": "2024-09-23T08:47:53.701Z",
+      "time_update": "2024-09-23T08:47:53.701Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 8,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Клеопатра",
-      "sex": "female",
-      "breed": "Абиссинская",
+      "gender": 2,
+      "breed": 9,
       "age": 1,
-      "time_create": "2024-07-27T10:46:34.807Z",
-      "time_update": "2024-07-27T10:46:34.807Z"
+      "time_create": "2024-09-23T08:48:07.500Z",
+      "time_update": "2024-09-23T08:48:07.500Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 9,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Пушок",
-      "sex": "male",
-      "breed": "Бенгальская",
+      "gender": 1,
+      "breed": 10,
       "age": 2,
-      "time_create": "2024-07-27T10:49:29.329Z",
-      "time_update": "2024-07-27T10:49:29.329Z"
+      "time_create": "2024-09-23T08:48:21.453Z",
+      "time_update": "2024-09-23T08:48:21.453Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 10,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Василий",
-      "sex": "male",
-      "breed": "Мейн-кун",
+      "gender": 1,
+      "breed": 11,
       "age": 5,
-      "time_create": "2024-07-27T10:52:58.240Z",
-      "time_update": "2024-07-27T10:52:58.240Z"
+      "time_create": "2024-09-23T08:48:34.244Z",
+      "time_update": "2024-09-23T08:48:34.244Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 11,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Рэм",
-      "sex": "male",
-      "breed": "Бигль",
+      "gender": 1,
+      "breed": 12,
       "age": 4,
-      "time_create": "2024-07-27T10:56:00.976Z",
-      "time_update": "2024-07-27T10:56:00.976Z"
+      "time_create": "2024-09-23T08:48:54.228Z",
+      "time_update": "2024-09-23T08:48:54.228Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 12,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Веста",
-      "sex": "female",
-      "breed": "Хаски",
+      "gender": 2,
+      "breed": 2,
       "age": 3,
-      "time_create": "2024-07-27T11:01:13.191Z",
-      "time_update": "2024-07-27T11:01:13.191Z"
+      "time_create": "2024-09-23T08:49:28.477Z",
+      "time_update": "2024-09-23T08:49:28.477Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 13,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Кайрат",
-      "sex": "male",
-      "breed": "Бельгийская овчарка",
+      "gender": 1,
+      "breed": 13,
       "age": 8,
-      "time_create": "2024-07-27T11:09:47.785Z",
-      "time_update": "2024-07-27T11:09:47.785Z"
+      "time_create": "2024-09-23T08:49:40.108Z",
+      "time_update": "2024-09-23T08:49:40.108Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 14,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Хатико",
-      "sex": "male",
-      "breed": "Акита-ину",
+      "gender": 1,
+      "breed": 14,
       "age": 1,
-      "time_create": "2024-07-27T11:16:22.910Z",
-      "time_update": "2024-07-27T11:16:22.910Z"
+      "time_create": "2024-09-23T08:49:58.839Z",
+      "time_update": "2024-09-23T08:49:58.839Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 15,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Жужа",
-      "sex": "female",
-      "breed": "Такса",
+      "gender": 2,
+      "breed": 15,
       "age": 5,
-      "time_create": "2024-07-27T11:19:23.383Z",
-      "time_update": "2024-07-27T11:19:23.383Z"
+      "time_create": "2024-09-23T08:50:50.079Z",
+      "time_update": "2024-09-23T08:50:50.079Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 16,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Фунтик",
-      "sex": "male",
-      "breed": "Бурма",
+      "gender": 1,
+      "breed": 16,
       "age": 4,
-      "time_create": "2024-07-27T11:22:53.621Z",
-      "time_update": "2024-07-27T11:22:53.621Z"
+      "time_create": "2024-09-23T08:51:01.710Z",
+      "time_update": "2024-09-23T08:51:01.710Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 17,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Марсель",
-      "sex": "male",
-      "breed": "Бомбейская",
+      "gender": 1,
+      "breed": 17,
       "age": 3,
-      "time_create": "2024-07-27T11:29:11.397Z",
-      "time_update": "2024-07-27T11:29:11.397Z"
+      "time_create": "2024-09-23T08:51:16.740Z",
+      "time_update": "2024-09-23T08:51:16.740Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 18,
     "fields": {
-      "type": "cat",
+      "type": 1,
       "name": "Матильда",
-      "sex": "female",
-      "breed": "Египетская мау",
+      "gender": 2,
+      "breed": 18,
       "age": 5,
-      "time_create": "2024-07-27T11:31:03.839Z",
-      "time_update": "2024-07-27T11:31:03.839Z"
+      "time_create": "2024-09-23T08:51:31.278Z",
+      "time_update": "2024-09-23T08:51:31.278Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 19,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Майя",
-      "sex": "female",
-      "breed": "Корги",
+      "gender": 2,
+      "breed": 19,
       "age": 5,
-      "time_create": "2024-07-27T11:34:08.292Z",
-      "time_update": "2024-07-27T11:34:08.292Z"
+      "time_create": "2024-09-23T08:51:44.541Z",
+      "time_update": "2024-09-23T08:51:44.541Z"
     }
   },
   {
     "model": "animals.animals",
     "pk": 20,
     "fields": {
-      "type": "dog",
+      "type": 2,
       "name": "Герда",
-      "sex": "female",
-      "breed": "Питбуль",
+      "gender": 2,
+      "breed": 20,
       "age": 6,
-      "time_create": "2024-07-27T11:36:51.329Z",
-      "time_update": "2024-07-27T11:36:51.329Z"
+      "time_create": "2024-09-23T08:51:56.390Z",
+      "time_update": "2024-09-23T08:51:56.390Z"
     }
   }
 ]

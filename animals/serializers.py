@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Animals, ImagePets
+from .models import Animals, ImagePets, TypeAnimals
 
 
 class ImageSerializer(serializers.ModelSerializer):
@@ -25,7 +25,7 @@ class AnimalListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Animals
-        fields = ['id', 'type', 'sex', 'age', 'breed', 'images']
+        fields = ['id', 'type', 'gender', 'age', 'breed', 'images']
 
     def get_images(self, obj):
         queryset = ImagePets.objects.filter(pet=obj).first()
@@ -34,23 +34,23 @@ class AnimalListSerializer(serializers.ModelSerializer):
 
 class TypeFilterSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Animals
-        fields = ['type']
-
-
-class SexFilterSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Animals
-        fields = ['sex']
-
-
-class BreedFilterSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Animals
-        fields = ['type', 'breed']
-
-
-class AgeFilterSerializer(serializers.Serializer):
-    title = serializers.CharField()
-    minAge = serializers.IntegerField()
-    maxAge = serializers.IntegerField()
+        model = TypeAnimals
+        fields = ['id', 'type_title']
+#
+#
+# class SexFilterSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Animals
+#         fields = ['sex']
+#
+#
+# class BreedFilterSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Animals
+#         fields = ['type', 'breed']
+#
+#
+# class AgeFilterSerializer(serializers.Serializer):
+#     title = serializers.CharField()
+#     minAge = serializers.IntegerField()
+#     maxAge = serializers.IntegerField()

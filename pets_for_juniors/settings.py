@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -74,7 +74,7 @@ DOMAIN_NAME_FRONT = os.getenv('DOMAIN_NAME_FRONT')
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173",
                         "http://localhost:5174",
-                        DOMAIN_NAME_FRONT,
+                        # DOMAIN_NAME_FRONT,
                         ]
 
 CORS_ALLOW_HEADERS = (
@@ -88,7 +88,7 @@ CORS_ALLOW_METHODS = (
 CSRF_TRUSTED_ORIGINS = ["http://localhost:5173",
                         "http://localhost:5174",
                         DOMAIN_NAME,
-                        DOMAIN_NAME_FRONT,
+                        # DOMAIN_NAME_FRONT,
                         ]
 
 ROOT_URLCONF = "pets_for_juniors.urls"
@@ -178,3 +178,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 8
 }
+
+FIXTURE_DIRS = [
+    'fixtures',
+]

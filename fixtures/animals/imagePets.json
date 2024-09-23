@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "pet": 1,
-      "image": "petpics/ovcharka-1.jpg"
+      "image": "petpics/ovcharka-1_qxBYxBH.jpg"
     }
   },
   {
@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
       "pet": 1,
-      "image": "petpics/ovcharka-2.jpg"
+      "image": "petpics/ovcharka-2_tMHI1lQ.jpg"
     }
   },
   {
@@ -20,7 +20,7 @@
     "pk": 3,
     "fields": {
       "pet": 2,
-      "image": "petpics/kolli-sotlandskaa-1.jpg"
+      "image": "petpics/kolli-sotlandskaa-1_B63scfZ.jpg"
     }
   },
   {
@@ -28,7 +28,7 @@
     "pk": 4,
     "fields": {
       "pet": 2,
-      "image": "petpics/kolli-sotlandskaa-2.jpg"
+      "image": "petpics/kolli-sotlandskaa-2_Vaq2k0j.jpg"
     }
   },
   {
@@ -36,7 +36,7 @@
     "pk": 5,
     "fields": {
       "pet": 3,
-      "image": "petpics/anglijskij-setter-1.jpeg"
+      "image": "petpics/anglijskij-setter-1_VHEXta2.jpeg"
     }
   },
   {
@@ -44,7 +44,7 @@
     "pk": 6,
     "fields": {
       "pet": 3,
-      "image": "petpics/angliiskii-setter-2.jpg"
+      "image": "petpics/angliiskii-setter-2_fpHMLpo.jpg"
     }
   },
   {
@@ -52,7 +52,7 @@
     "pk": 7,
     "fields": {
       "pet": 4,
-      "image": "petpics/doberman-1.jpg"
+      "image": "petpics/doberman-1_uzGYOhe.jpg"
     }
   },
   {
@@ -60,7 +60,7 @@
     "pk": 8,
     "fields": {
       "pet": 4,
-      "image": "petpics/doberman-2.jpeg"
+      "image": "petpics/doberman-2_doENnxC.jpeg"
     }
   },
   {
@@ -68,7 +68,7 @@
     "pk": 9,
     "fields": {
       "pet": 5,
-      "image": "petpics/siamskaya-koshka-1.jpg"
+      "image": "petpics/siamskaya-koshka-1_yWDFYQW.jpg"
     }
   },
   {
@@ -76,7 +76,7 @@
     "pk": 10,
     "fields": {
       "pet": 5,
-      "image": "petpics/siamskaya-koshka-2.jpg"
+      "image": "petpics/siamskaya-koshka-2_Via4HtN.jpg"
     }
   },
   {
@@ -84,7 +84,7 @@
     "pk": 11,
     "fields": {
       "pet": 6,
-      "image": "petpics/oriental-1.jpg"
+      "image": "petpics/oriental-1_IXfrqLt.jpg"
     }
   },
   {
@@ -92,7 +92,7 @@
     "pk": 12,
     "fields": {
       "pet": 6,
-      "image": "petpics/oriental-2.jpg"
+      "image": "petpics/oriental-2_bSOxrac.jpg"
     }
   },
   {
@@ -100,7 +100,7 @@
     "pk": 13,
     "fields": {
       "pet": 7,
-      "image": "petpics/sfinks-1.jpg"
+      "image": "petpics/sfinks-1_Fp7X7mQ.jpg"
     }
   },
   {
@@ -108,7 +108,7 @@
     "pk": 14,
     "fields": {
       "pet": 7,
-      "image": "petpics/sfinks-2.jpg"
+      "image": "petpics/sfinks-2_d0GOp0j.jpg"
     }
   },
   {
@@ -116,7 +116,7 @@
     "pk": 15,
     "fields": {
       "pet": 8,
-      "image": "petpics/abissinskaya-1.jpg"
+      "image": "petpics/abissinskaya-1_eEDGNeI.jpg"
     }
   },
   {
@@ -124,7 +124,7 @@
     "pk": 16,
     "fields": {
       "pet": 8,
-      "image": "petpics/abissinskaya-2.jpg"
+      "image": "petpics/abissinskaya-2_x7ZYxty.jpg"
     }
   },
   {
@@ -132,7 +132,7 @@
     "pk": 17,
     "fields": {
       "pet": 9,
-      "image": "petpics/bengalskoi-1.jpg"
+      "image": "petpics/bengalskoi-1_Emp3clC.jpg"
     }
   },
   {
@@ -140,7 +140,7 @@
     "pk": 18,
     "fields": {
       "pet": 9,
-      "image": "petpics/bengalskaja-2.jpeg"
+      "image": "petpics/bengalskaja-2_i5dYv7m.jpeg"
     }
   },
   {
@@ -148,7 +148,7 @@
     "pk": 19,
     "fields": {
       "pet": 10,
-      "image": "petpics/mein-kun-1.jpg"
+      "image": "petpics/mein-kun-1_7DFxik2.jpg"
     }
   },
   {
@@ -156,7 +156,7 @@
     "pk": 20,
     "fields": {
       "pet": 10,
-      "image": "petpics/mein-kun-2.jpg"
+      "image": "petpics/mein-kun-2_IIjRoq3.jpg"
     }
   },
   {
@@ -164,7 +164,7 @@
     "pk": 21,
     "fields": {
       "pet": 11,
-      "image": "petpics/bigl-1.jpg"
+      "image": "petpics/bigl-1_9zVSjaS.jpg"
     }
   },
   {
@@ -172,7 +172,7 @@
     "pk": 22,
     "fields": {
       "pet": 11,
-      "image": "petpics/bigl-2.jpg"
+      "image": "petpics/bigl-2_y56PlMl.jpg"
     }
   },
   {
@@ -180,7 +180,7 @@
     "pk": 23,
     "fields": {
       "pet": 12,
-      "image": "petpics/Haski-1.jpg"
+      "image": "petpics/Haski-1_d0QORms.jpg"
     }
   },
   {
@@ -188,7 +188,7 @@
     "pk": 24,
     "fields": {
       "pet": 12,
-      "image": "petpics/Haski-2.jpg"
+      "image": "petpics/Haski-2_kdbGWln.jpg"
     }
   },
   {
@@ -196,7 +196,7 @@
     "pk": 25,
     "fields": {
       "pet": 13,
-      "image": "petpics/belgiiska-ovcharka-1.jpg"
+      "image": "petpics/belgiiska-ovcharka-1_kSxBTkJ.jpg"
     }
   },
   {
@@ -204,7 +204,7 @@
     "pk": 26,
     "fields": {
       "pet": 13,
-      "image": "petpics/belgiiska-ovcharka-2.jpg"
+      "image": "petpics/belgiiska-ovcharka-2_dQB2fdS.jpg"
     }
   },
   {
@@ -212,7 +212,7 @@
     "pk": 27,
     "fields": {
       "pet": 14,
-      "image": "petpics/akita-inu-1.jpg"
+      "image": "petpics/akita-inu-1_AMYdtcx.jpg"
     }
   },
   {
@@ -220,7 +220,7 @@
     "pk": 28,
     "fields": {
       "pet": 14,
-      "image": "petpics/akita-inu-2.jpeg"
+      "image": "petpics/akita-inu-2_mvgJqeZ.jpeg"
     }
   },
   {
@@ -228,7 +228,7 @@
     "pk": 29,
     "fields": {
       "pet": 15,
-      "image": "petpics/taksa-1.jpg"
+      "image": "petpics/taksa-1_YRX5T1y.jpg"
     }
   },
   {
@@ -236,7 +236,7 @@
     "pk": 30,
     "fields": {
       "pet": 15,
-      "image": "petpics/taksa-2.jpg"
+      "image": "petpics/taksa-2_zbCB3cV.jpg"
     }
   },
   {
@@ -244,7 +244,7 @@
     "pk": 31,
     "fields": {
       "pet": 16,
-      "image": "petpics/burma-1.jpg"
+      "image": "petpics/burma-1_PnPaGCU.jpg"
     }
   },
   {
@@ -252,7 +252,7 @@
     "pk": 32,
     "fields": {
       "pet": 16,
-      "image": "petpics/burma-2.jpg"
+      "image": "petpics/burma-2_65Ta4gy.jpg"
     }
   },
   {
@@ -260,7 +260,7 @@
     "pk": 33,
     "fields": {
       "pet": 17,
-      "image": "petpics/bombei-1.jpeg"
+      "image": "petpics/bombei-1_7oR2Xe3.jpeg"
     }
   },
   {
@@ -268,7 +268,7 @@
     "pk": 34,
     "fields": {
       "pet": 17,
-      "image": "petpics/bombei-2.jpeg"
+      "image": "petpics/bombei-2_nesSlbz.jpeg"
     }
   },
   {
@@ -276,7 +276,7 @@
     "pk": 35,
     "fields": {
       "pet": 18,
-      "image": "petpics/may-1.jpeg"
+      "image": "petpics/may-1_yNhpytJ.jpeg"
     }
   },
   {
@@ -284,7 +284,7 @@
     "pk": 36,
     "fields": {
       "pet": 18,
-      "image": "petpics/may-2.jpg"
+      "image": "petpics/may-2_RF8NLcI.jpg"
     }
   },
   {
@@ -292,7 +292,7 @@
     "pk": 37,
     "fields": {
       "pet": 19,
-      "image": "petpics/korgi-1.jpg"
+      "image": "petpics/korgi-1_DmX1alR.jpg"
     }
   },
   {
@@ -300,7 +300,7 @@
     "pk": 38,
     "fields": {
       "pet": 19,
-      "image": "petpics/korgi-2.jpg"
+      "image": "petpics/korgi-2_zyNhUoR.jpg"
     }
   },
   {
@@ -308,7 +308,7 @@
     "pk": 39,
     "fields": {
       "pet": 20,
-      "image": "petpics/pitbul-1.jpg"
+      "image": "petpics/pitbul-1_At3dniO.jpg"
     }
   },
   {
@@ -316,7 +316,7 @@
     "pk": 40,
     "fields": {
       "pet": 20,
-      "image": "petpics/pitbul-2.jpg"
+      "image": "petpics/pitbul-2_mR43vK6.jpg"
     }
   }
 ]
