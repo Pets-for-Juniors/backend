@@ -74,7 +74,7 @@ DOMAIN_NAME_FRONT = os.getenv('DOMAIN_NAME_FRONT')
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173",
                         "http://localhost:5174",
-                        DOMAIN_NAME_FRONT,
+                        # DOMAIN_NAME_FRONT,
                         ]
 
 CORS_ALLOW_HEADERS = (
@@ -88,7 +88,7 @@ CORS_ALLOW_METHODS = (
 CSRF_TRUSTED_ORIGINS = ["http://localhost:5173",
                         "http://localhost:5174",
                         DOMAIN_NAME,
-                        DOMAIN_NAME_FRONT,
+                        # DOMAIN_NAME_FRONT,
                         ]
 
 ROOT_URLCONF = "pets_for_juniors.urls"
