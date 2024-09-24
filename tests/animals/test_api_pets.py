@@ -26,7 +26,7 @@ def test_can_call_endpoint_type_dog(type):
     response = requests.get(f'{ENDPOINT}/?type={type}')
     assert response.status_code == successful_status_code
     get_data = response.json()
-    assert get_data['count'] == 11 if type == 'dog' else 9
+    assert get_data['count'] == 11 if type == 'Собака' else 9
     data = get_data['results']
     for el in data:
         assert el['type'] == type
@@ -34,13 +34,13 @@ def test_can_call_endpoint_type_dog(type):
 
 @pytest.mark.parametrize('gender', gender_list)
 def test_can_call_endpoint_sex_female(gender):
-    response = requests.get(f'{ENDPOINT}/?sex={gender}')
+    response = requests.get(f'{ENDPOINT}/?gender={gender}')
     assert response.status_code == successful_status_code
     get_data = response.json()
-    assert get_data['count'] == 13 if type == 'male' else 7
+    assert get_data['count'] == 13 if type == 'Мужской' else 7
     data = get_data['results']
     for el in data:
-        assert el['sex'] == gender
+        assert el['gender'] == gender
 
 
 @pytest.mark.parametrize('age', age_list)

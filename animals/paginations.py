@@ -3,7 +3,6 @@ from rest_framework import pagination
 from .models import Animals, TypeAnimals, AgeAnimals, Gender, Breed
 
 
-
 class TypePagination(pagination.LimitOffsetPagination):
     queryset = TypeAnimals.objects.all()
 

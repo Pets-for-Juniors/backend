@@ -42,7 +42,7 @@ def test_get_paginaton_offset_employees():
 
     assert data['count'] == COUNT
 
-    assert data['data'][0]['id'] == 2
+    assert data['results'][0]['id'] == 2
 
 
 def test_get_paginaton_limof_employees():
