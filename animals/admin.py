@@ -37,10 +37,3 @@ class AgeAdmin(admin.ModelAdmin):
     list_display = ('id', 'age_title', 'min_age', 'max_age')
     list_display_links = ('id', 'age_title', 'min_age', 'max_age')
     ordering = ['id']
-
-
-# @admin.register(ImagePets)
-# class ImageAdmin(admin.ModelAdmin):
-#     list_display = ('id', 'pet', 'image')
-#     list_display_links = ('id',)
-#     ordering = ['id']
