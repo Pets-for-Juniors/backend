@@ -51,33 +51,3 @@ class BreedFilterAPIView(generics.ListAPIView, mixins.ListModelMixin):
     serializer_class = BreedFilterSerializer
     pagination_class = BreedPagination
     filterset_fields = '__all__'
-#
-#
-# class AgeFilterAPIView(generics.ListAPIView):
-#     serializer_class = AgeFilterSerializer
-#     pagination_class = AgePagination
-#
-#     def get_queryset(self):
-#         global age_data
-#         title = self.request.query_params.get('title')
-#         min_age = self.request.query_params.get('minAge')
-#         max_age = self.request.query_params.get('maxAge')
-#
-#         if title:
-#             age_data = [item for item in age_data if item['title'] == title]
-#         if min_age:
-#             age_data = [item for item in age_data if item['minAge'] >= int(min_age)]
-#         if max_age:
-#             age_data = [item for item in age_data if item['maxAge'] <= int(max_age)]
-#
-#         return age_data
-#
-#     def get(self, request, *args, **kwargs):
-#         queryset = self.get_queryset()
-#         page = self.paginate_queryset(queryset)
-#         if page is not None:
-#             serializer = self.get_serializer(page, many=True)
-#             return self.get_paginated_response(serializer.data)
-#
-#         serializer = self.get_serializer(queryset, many=True)
-#         return Response(serializer.data)
