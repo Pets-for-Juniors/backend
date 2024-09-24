@@ -1,0 +1,29 @@
+[
+  {
+    "model": "animals.ageanimals",
+    "pk": 1,
+    "fields": {
+      "age_title": "Молодые",
+      "min_age": 0,
+      "max_age": 3
+    }
+  },
+  {
+    "model": "animals.ageanimals",
+    "pk": 2,
+    "fields": {
+      "age_title": "Средние",
+      "min_age": 3,
+      "max_age": 6
+    }
+  },
+  {
+    "model": "animals.ageanimals",
+    "pk": 3,
+    "fields": {
+      "age_title": "Пожилые",
+      "min_age": 6,
+      "max_age": 1000
+    }
+  }
+]

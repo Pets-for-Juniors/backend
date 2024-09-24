@@ -1,14 +1,5 @@
-from .models import Animals, TypeAnimals
-from .constans import age_data
+from .models import Animals, TypeAnimals, AgeAnimals, Gender, Breed
 from pets_for_juniors.utils import BasePaginationView
-
-
-class BreedPagination(BasePaginationView):
-    queryset = Animals.objects.values('breed', 'type').distinct()
-
-
-# class GenderPagination(BasePaginationView):
-#     queryset = Animals.objects.values('sex').distinct()
 
 
 class TypePagination(BasePaginationView):
@@ -19,5 +10,13 @@ class CustomPagination(BasePaginationView):
     queryset = Animals.objects.all()
 
 
-# class AgePagination(BasePaginationView):
-#     queryset = age_data
+class AgePagination(BasePaginationView):
+    queryset = AgeAnimals.objects.all()
+
+
+class GenderPagination(BasePaginationView):
+    queryset = Gender.objects.all()
+
+
+class BreedPagination(BasePaginationView):
+    queryset = Breed.objects.all()

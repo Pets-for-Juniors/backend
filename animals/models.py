@@ -70,6 +70,9 @@ class ImagePets(models.Model):
         verbose_name = 'Фото'
         verbose_name_plural = 'Фото'
 
+    def __str__(self):
+        return self.pet
+
 
 class AgeAnimals(models.Model):
     age_title = models.CharField(max_length=200, blank=True, verbose_name='Категория', unique=True)

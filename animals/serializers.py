@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Animals, ImagePets, TypeAnimals
+from .models import Animals, ImagePets, TypeAnimals, AgeAnimals, Gender, Breed
 
 
 class ImageSerializer(serializers.ModelSerializer):
@@ -36,21 +36,21 @@ class TypeFilterSerializer(serializers.ModelSerializer):
     class Meta:
         model = TypeAnimals
         fields = ['id', 'type_title']
-#
-#
-# class SexFilterSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Animals
-#         fields = ['sex']
-#
-#
-# class BreedFilterSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Animals
-#         fields = ['type', 'breed']
-#
-#
-# class AgeFilterSerializer(serializers.Serializer):
-#     title = serializers.CharField()
-#     minAge = serializers.IntegerField()
-#     maxAge = serializers.IntegerField()
+
+
+class AgeFilterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AgeAnimals
+        fields = '__all__'
+
+
+class GenderFilterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Gender
+        fields = '__all__'
+
+
+class BreedFilterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Breed
+        fields = '__all__'
