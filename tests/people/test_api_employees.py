@@ -46,7 +46,7 @@ def test_get_paginaton_offset_employees():
 
 
 def test_get_paginaton_limof_employees():
-    response = requests.get(ENDPOINT + f'employees/?limit=1&offset=1')
+    response = requests.get(ENDPOINT + f'employees/?limit={LIMIT}&offset={OFFSET}')
 
     assert response.status_code == successful_status_code
 
