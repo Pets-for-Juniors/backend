@@ -15,10 +15,10 @@ def test_get_list_employees():
 
     assert data['count'] == COUNT
 
-    assert len(data['data']) == COUNT
+    assert len(data['results']) == COUNT
 
     for i in range(COUNT):
-        assert data['data'][i]['id'] == i + 1
+        assert data['results'][i]['id'] == i + 1
 
 
 def test_get_paginaton_limit_employees():
@@ -28,9 +28,9 @@ def test_get_paginaton_limit_employees():
 
     data = response.json()
 
-    assert data['count'] == LIMIT
+    assert data['count'] == COUNT
 
-    assert len(data['data']) == LIMIT
+    assert len(data['results']) == LIMIT
 
 
 def test_get_paginaton_offset_employees():
@@ -40,23 +40,23 @@ def test_get_paginaton_offset_employees():
 
     data = response.json()
 
-    assert data['count'] == COUNT - OFFSET
+    assert data['count'] == COUNT
 
     assert data['data'][0]['id'] == 2
 
 
 def test_get_paginaton_limof_employees():
-    response = requests.get(ENDPOINT + f'employees/?limit={LIMIT}&offset={OFFSET}')
+    response = requests.get(ENDPOINT + f'employees/?limit=1&offset=1')
 
     assert response.status_code == successful_status_code
 
     data = response.json()
 
-    assert data['count'] == LIMIT
+    assert data['count'] == COUNT
 
-    assert len(data['data']) == LIMIT
+    assert len(data['results']) == LIMIT
 
-    assert data['data'][0]['id'] == 2
+    assert data['results'][0]['id'] == 2
 
 
 def test_get_filter_employees():
@@ -68,7 +68,7 @@ def test_get_filter_employees():
 
     assert data['count'] == 1
 
-    assert len(data['data']) == 1
+    assert len(data['results']) == 1
 
 
 def test_get_ordering_employees():
@@ -80,4 +80,4 @@ def test_get_ordering_employees():
 
     assert data['count'] == COUNT
 
-    assert data['data'] == sorted(data['data'], key=lambda d: d['age'])
+    assert data['results'] == sorted(data['results'], key=lambda d: d['age'])
