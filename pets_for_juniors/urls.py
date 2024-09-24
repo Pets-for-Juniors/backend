@@ -19,7 +19,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
-from animals.views import AnimalAPIView, AnimalListAPIView, TypeFilterAPIView, SexFilterAPIView, BreedFilterAPIView, AgeFilterAPIView
+from animals.views import (AnimalAPIView, AnimalListAPIView, TypeFilterAPIView, SexFilterAPIView, BreedFilterAPIView, AgeFilterAPIView)
 from people.views import PeopleAPIView
 
 
