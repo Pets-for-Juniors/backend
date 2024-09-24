@@ -1,0 +1,16 @@
+[
+  {
+    "model": "animals.typeanimals",
+    "pk": 1,
+    "fields": {
+      "type_title": "Кошка"
+    }
+  },
+  {
+    "model": "animals.typeanimals",
+    "pk": 2,
+    "fields": {
+      "type_title": "Собака"
+    }
+  }
+]

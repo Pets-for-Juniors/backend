@@ -1,0 +1,162 @@
+[
+  {
+    "model": "animals.breed",
+    "pk": 1,
+    "fields": {
+      "breed_title": "Сиамская",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 2,
+    "fields": {
+      "breed_title": "Хаски",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 3,
+    "fields": {
+      "breed_title": "Немецкая овчарка",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 4,
+    "fields": {
+      "breed_title": "Шотландская колли",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 5,
+    "fields": {
+      "breed_title": "Английский сеттер",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 6,
+    "fields": {
+      "breed_title": "Доберман",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 7,
+    "fields": {
+      "breed_title": "Ориентал",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 8,
+    "fields": {
+      "breed_title": "Сфинкс",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 9,
+    "fields": {
+      "breed_title": "Абиссинская",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 10,
+    "fields": {
+      "breed_title": "Бенгальская",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 11,
+    "fields": {
+      "breed_title": "Мейн-кун",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 12,
+    "fields": {
+      "breed_title": "Бигль",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 13,
+    "fields": {
+      "breed_title": "Бельгийская овчарка",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 14,
+    "fields": {
+      "breed_title": "Акита-ину",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 15,
+    "fields": {
+      "breed_title": "Такса",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 16,
+    "fields": {
+      "breed_title": "Бурма",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 17,
+    "fields": {
+      "breed_title": "Бомбейская",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 18,
+    "fields": {
+      "breed_title": "Египетская мау",
+      "type": 1
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 19,
+    "fields": {
+      "breed_title": "Корги",
+      "type": 2
+    }
+  },
+  {
+    "model": "animals.breed",
+    "pk": 20,
+    "fields": {
+      "breed_title": "Питбуль",
+      "type": 2
+    }
+  }
+]

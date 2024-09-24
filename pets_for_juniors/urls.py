@@ -19,7 +19,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
-from animals.views import (AnimalAPIView, AnimalListAPIView, TypeFilterAPIView, SexFilterAPIView, BreedFilterAPIView, AgeFilterAPIView)
+from animals.views import (AnimalAPIView, AnimalListAPIView, TypeFilterAPIView, AgeFilterAPIView, GenderFilterAPIView,
+                           BreedFilterAPIView)
 from people.views import PeopleAPIView
 
 
@@ -32,8 +33,8 @@ urlpatterns = [
     path('api/employees/', PeopleAPIView.as_view()),
     path("api/pets/", AnimalListAPIView.as_view()),
     path("api/pets/filter/type/", TypeFilterAPIView.as_view()),
-    path("api/pets/filter/gender/", SexFilterAPIView.as_view()),
-    path("api/pets/filter/breed/", BreedFilterAPIView.as_view()),
     path("api/pets/filter/age/", AgeFilterAPIView.as_view()),
+    path("api/pets/filter/gender/", GenderFilterAPIView.as_view()),
+    path("api/pets/filter/breed/", BreedFilterAPIView.as_view()),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

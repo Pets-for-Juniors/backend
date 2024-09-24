@@ -1,19 +1,10 @@
 from rest_framework import pagination
 
-from .models import Animals
-from .constans import age_data
-
-
-class BreedPagination(pagination.LimitOffsetPagination):
-    queryset = Animals.objects.values('breed', 'type').distinct()
-
-
-class GenderPagination(pagination.LimitOffsetPagination):
-    queryset = Animals.objects.values('sex').distinct()
+from .models import Animals, TypeAnimals, AgeAnimals, Gender, Breed
 
 
 class TypePagination(pagination.LimitOffsetPagination):
-    queryset = Animals.objects.values('type').distinct()
+    queryset = TypeAnimals.objects.all()
 
 
 class CustomPagination(pagination.LimitOffsetPagination):
@@ -21,4 +12,12 @@ class CustomPagination(pagination.LimitOffsetPagination):
 
 
 class AgePagination(pagination.LimitOffsetPagination):
-    queryset = age_data
+    queryset = AgeAnimals.objects.all()
+
+
+class GenderPagination(pagination.LimitOffsetPagination):
+    queryset = Gender.objects.all()
+
+
+class BreedPagination(pagination.LimitOffsetPagination):
+    queryset = Breed.objects.all()
