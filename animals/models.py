@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 class TypeAnimals(models.Model):
-    type_title = models.CharField(max_length=200, blank=False, verbose_name='Тип', unique=True)
+    title = models.CharField(max_length=200, blank=False, verbose_name='Тип', unique=True)
 
     class Meta:
         db_table = 'Тип'
@@ -11,11 +11,11 @@ class TypeAnimals(models.Model):
         verbose_name_plural = 'Типы'
 
     def __str__(self):
-        return self.type_title
+        return self.title
 
 
 class Gender(models.Model):
-    gender_title = models.CharField(max_length=100, blank=False, verbose_name='Пол')
+    title = models.CharField(max_length=100, blank=False, verbose_name='Пол')
 
     class Meta:
         db_table = 'Пол'
@@ -23,11 +23,11 @@ class Gender(models.Model):
         verbose_name_plural = 'Пол'
 
     def __str__(self):
-        return self.gender_title
+        return self.title
 
 
 class Breed(models.Model):
-    breed_title = models.CharField(max_length=200, blank=False, verbose_name='Порода', unique=True)
+    title = models.CharField(max_length=200, blank=False, verbose_name='Порода', unique=True)
     type = models.ForeignKey(TypeAnimals, default=None, related_name='id_type', verbose_name='Тип',
                              on_delete=models.CASCADE)
 
@@ -37,7 +37,7 @@ class Breed(models.Model):
         verbose_name_plural = 'Породы'
 
     def __str__(self):
-        return self.breed_title
+        return self.title
 
 
 class Animals(models.Model):
@@ -75,7 +75,7 @@ class ImagePets(models.Model):
 
 
 class AgeAnimals(models.Model):
-    age_title = models.CharField(max_length=200, blank=True, verbose_name='Категория', unique=True)
+    title = models.CharField(max_length=200, blank=True, verbose_name='Категория', unique=True)
     min_age = models.PositiveSmallIntegerField(blank=True, verbose_name='Минимальный возраст')
     max_age = models.PositiveSmallIntegerField(blank=True, verbose_name='Максимальный возраст')
 
@@ -85,4 +85,4 @@ class AgeAnimals(models.Model):
         verbose_name_plural = 'Возраст'
 
     def __str__(self):
-        return self.age_title
+        return self.title
